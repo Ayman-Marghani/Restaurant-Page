@@ -1,14 +1,15 @@
-export default function InitialPageLoad() {
+export default function InitialPageLoad(homePageImg) {
   const contentElem = document.querySelector("#content");
+  contentElem.textContent = "";
   // Headline element
-  const headlineElem = document.createElement("h2");
+  const headlineElem = document.createElement("h1");
   headlineElem.classList.add("homepage-headline");
   headlineElem.textContent = "Ayman's Restaurant";
   contentElem.appendChild(headlineElem);
   // Image element
   const imgElem = document.createElement("img");
   imgElem.classList.add("homepage-img");
-  imgElem.src = "/src/restuarant-image.jpg";
+  imgElem.src = homePageImg;
   imgElem.alt = "Interior of cozy restaurant, loft style stock photo";
   contentElem.appendChild(imgElem);
   // description element
