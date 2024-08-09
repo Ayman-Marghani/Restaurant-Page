@@ -30,6 +30,6 @@ export default function ContactPageLoad() {
   // Address
   const addressText = document.createElement("div");
   addressText.classList.add("contact-page-text");
-  addressText.textContent = "Address: 123 Ay Res St, ABC City, AZ 11100";
+  addressText.textContent = "Address: 123 Ay Res St, ABC City";
   contentElem.appendChild(addressText);
 }
