@@ -7,7 +7,7 @@ import './style.css';
 // Items data (title, price)
 import ItemsData from './data/items.csv';
 // Images
-import homePageImg from './img/restaurant-image.jpg';
+import homePageImg from './img/homepage-img.jpg';
 import item1Img from './img/item1.jpg';
 import item2Img from './img/item2.jpg';
 import item3Img from './img/item3.jpg';
