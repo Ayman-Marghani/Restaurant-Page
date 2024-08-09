@@ -1,1 +1,3 @@
-console.log("Testing");
+import InitialPageLoad from "./Initial-page-load";
+InitialPageLoad();
+
