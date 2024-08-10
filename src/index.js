@@ -1,6 +1,6 @@
 // JS modules
 import createDomElem from "./modules/create-dom-element";
-import InitialPageLoad from "./modules/Initial-page-load";
+import InitialPageLoad from "./modules/initial-page-load";
 import ContactPageLoad from "./modules/contact-page-load";
 import MenuPageLoad from "./modules/menu-page-load";
 // CSS styles file
