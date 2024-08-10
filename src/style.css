@@ -58,8 +58,6 @@ header {
   background-color: #fff;
 
   padding: var(--padding-small);
-
-  height: fit-content;
 }
 
 nav {
