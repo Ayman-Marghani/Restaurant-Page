@@ -1,6 +1,6 @@
 # Restaurant-Page
 
-This project is part of The Odin Project's JavaScript curriculum. It's a simple restaurant website that demonstrates the use of modern web development techniques and tools.
+This project is part of The Odin Project's JavaScript curriculum. It's a simple restaurant website that demonstrates the use of modern web development techniques and tools. Live preview: [Restaurant Page](https://ayman-marghani.github.io/Restaurant-Page/)
 
 ## Features
 
