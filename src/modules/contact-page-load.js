@@ -3,19 +3,17 @@ export default function ContactPageLoad(createDomElem) {
   contentElem.textContent = "";
 
   // Set specific grid properties for contact page
-  contentElem.style.gridTemplateColumns = "repeat(auto-fit, minmax(350px, 1fr))";
-  contentElem.style.gridAutoRows= "1fr";
-  contentElem.style.justifyItems = "stretch";
+  const contactPageContainer = createDomElem("div", "contact-page-container", contentElem);
 
   // Opening hours Div
-  const openingHrsDiv = createDomElem("div", "contact-page-container", contentElem);
+  const openingHrsDiv = createDomElem("div", "contact-page-box", contactPageContainer);
   // Opening hours heading
   createDomElem("h2", "contact-page-heading", openingHrsDiv, "Opening Hours");
   // Opening hours text
   createDomElem("div", "contact-page-text", openingHrsDiv, "Sunday - Thursday: 9 am to 11 pm");
 
   // Contact us Div
-  const contactUsDiv = createDomElem("div", "contact-page-container", contentElem);
+  const contactUsDiv = createDomElem("div", "contact-page-box", contactPageContainer);
   // Contact Us heading
   createDomElem("h2", "contact-page-heading", contactUsDiv, "Contact Us");
   // Phone
