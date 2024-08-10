@@ -1,4 +1,5 @@
 export default function MenuPageLoad(createDomElem, menuItems) {
+  const menuItemsLen = menuItems.length;
   const contentElem = document.querySelector("#content");
   contentElem.textContent = "";
 
@@ -9,7 +10,7 @@ export default function MenuPageLoad(createDomElem, menuItems) {
   const menuItemsDiv = createDomElem("div", "menu-items", contentElem);
   
   // Menu Items elements
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < menuItemsLen; i++) {
     // Menu item
     const itemElem = createDomElem("div", "menu-item-card", menuItemsDiv);
     // Menu item image
