@@ -2,15 +2,18 @@ export default function MenuPageLoad(menuItems) {
   const contentElem = document.querySelector("#content");
   contentElem.textContent = "";
   // Heading
-  const menuHeading = document.createElement("h2");
+  const menuHeading = document.createElement("h1");
   menuHeading.classList.add("menu-heading");
   menuHeading.textContent = "Menu";
   contentElem.appendChild(menuHeading);
+  // Menu Items div
+  const menuItemsDiv = document.createElement("div");
+  menuItemsDiv.classList.add("menu-items");
   // Menu Items elements
   for (let i = 0; i < 6; i++) {
     // Menu item
     const itemElem = document.createElement("div");
-    itemElem.classList.add("menu-item");
+    itemElem.classList.add("menu-item-card");
     // image
     const itemImgElem = document.createElement("img");
     itemImgElem.classList.add("item-img");
@@ -26,7 +29,8 @@ export default function MenuPageLoad(menuItems) {
     itemPriceElem.classList.add("item-price");
     itemPriceElem.textContent = menuItems[i].price;
     itemElem.appendChild(itemPriceElem);
-    // Append the item to the content div
-    contentElem.appendChild(itemElem);
+    // Append the item to the menu items div
+    menuItemsDiv.appendChild(itemElem);
   }
+  contentElem.appendChild(menuItemsDiv);
 }

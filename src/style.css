@@ -1,4 +1,101 @@
-body,
-.content {
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+/************************************************************/
+/* Custom properties */
+:root {
+  --orange: #fb8500;
+  --dark-blue: #023047;
+  --light-gray: #f1f5f9;
+
+  --padding-small: 12px;
+  --padding-medium: 24px;
+
+  --gap: 24px;
+
+  --bold-font: 550;
+  --bolder-font: 800;
+}
+/************************************************************/
+/* General Styles */
+body {
+  font-family: tahoma, sans-serif;
+
+  background-color: var(--light-gray);
+  color: var(--dark-blue);
+
   text-align: center;
+}
+/************************************************************/
+/* Header Section */
+header {
+  background-color: #fff;
+
+  padding: var(--padding-small);
+
+  height: fit-content;
+}
+
+nav {
+  margin: var(--padding-small);
+
+  display: flex;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+button {
+  font-weight: var(--bolder-font);
+
+  background-color: var(--orange);
+  color: #fff;
+
+  padding: var(--padding-small) var(--padding-medium);
+
+  border: none;
+  border-radius: 100px;
+}
+/************************************************************/
+/* Content Section */
+#content {
+  margin: var(--padding-medium);
+
+  display: grid;
+  justify-items: center;
+  gap: var(--gap);
+}
+
+/************************************************************/
+/* Home page */
+.homepage-desc {
+  font-weight: var(--bold-font);
+
+  padding: 0 var(--padding-medium);
+}
+
+.homepage-img {
+  max-width: 80%;
 }
