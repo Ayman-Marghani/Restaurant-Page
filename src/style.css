@@ -100,3 +100,18 @@ button {
 }
 /************************************************************/
 /* Contact page */
+.contact-page-container {
+  background-color: #fff;
+  
+  padding: var(--padding-medium);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: calc(var(--gap) / 2);
+
+  border-radius: 10px;
+
+  box-shadow: 5px 5px 5px lightgray;
+}
+

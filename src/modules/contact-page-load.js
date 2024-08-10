@@ -2,6 +2,11 @@ export default function ContactPageLoad(createDomElem) {
   const contentElem = document.querySelector("#content");
   contentElem.textContent = "";
 
+  // Set specific grid properties for contact page
+  contentElem.style.gridTemplateColumns = "repeat(auto-fit, minmax(350px, 1fr))";
+  contentElem.style.gridAutoRows= "1fr";
+  contentElem.style.justifyItems = "stretch";
+
   // Opening hours Div
   const openingHrsDiv = createDomElem("div", "contact-page-container", contentElem);
   // Opening hours heading
