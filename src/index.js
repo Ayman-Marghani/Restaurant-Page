@@ -1,10 +1,11 @@
 // JS modules
+import createDomElem from "./modules/create-dom-element";
 import InitialPageLoad from "./modules/Initial-page-load";
 import ContactPageLoad from "./modules/contact-page-load";
 import MenuPageLoad from "./modules/menu-page-load";
 // CSS styles file
 import './style.css';
-// Items data (title, price)
+// Items csv data file (title, price)
 import ItemsData from './data/items.csv';
 // Images
 import homePageImg from './img/homepage-img.jpg';
@@ -26,11 +27,11 @@ function createMenuItem(title, price, image) {
 }
 
 // Initially load the home page
-InitialPageLoad(homePageImg);
+InitialPageLoad(createDomElem, homePageImg);
 
 // Buttons event listeners
-homeBtn.addEventListener("click", () => InitialPageLoad(homePageImg));
-contactBtn.addEventListener("click", () => ContactPageLoad());
+homeBtn.addEventListener("click", () => InitialPageLoad(createDomElem, homePageImg));
+contactBtn.addEventListener("click", () => ContactPageLoad(createDomElem));
 menuBtn.addEventListener("click", () => {
   let menuItems = [];
   const menuItemsImages = [ 
@@ -51,5 +52,5 @@ menuBtn.addEventListener("click", () => {
     menuItems.push(menuItem);
   }
   
-  MenuPageLoad(menuItems);
+  MenuPageLoad(createDomElem, menuItems);
 });
