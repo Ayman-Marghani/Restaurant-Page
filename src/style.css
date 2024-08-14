@@ -52,6 +52,10 @@ body {
 
   text-align: center;
 }
+
+button:hover {
+  cursor: pointer
+}
 /************************************************************/
 /* Header Section */
 header {
