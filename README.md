@@ -30,9 +30,8 @@ This project is part of The Odin Project's JavaScript curriculum. It's a simple 
 ## Project Structure
 ```
 Restaurant-Page/
-├── src/
 ├── dist/
-├── node_modules/
+├── src/
 ├── package.json
 ├── package-lock.json
 ├── webpack.config.js
